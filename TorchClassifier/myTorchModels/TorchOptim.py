@@ -12,6 +12,8 @@ def gettorchoptim(name, model_ft, lr=0.001, momentum=0.9, weight_decay=1e-4):
         optimizer_ft = optim.Adam(model_ft.parameters())
     elif name=='adamresnetcustomrate':
         optimizer_ft = adamresnetcustomrate(model_ft)
+    elif name=='AdamW':
+        optimizer_ft = optim.AdamW(model_ft.parameters())
     return optimizer_ft
 
 #discriminative fine-tuning - a technique used in transfer learning where later layers in a model have higher learning rates than earlier ones.

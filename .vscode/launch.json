@@ -23,8 +23,10 @@
                 "--data_type", "torchvisiondataset",
                 "--data_path", "/Users/shashu/Desktop/258/Assignment-2/assignment-2/CMPE-258",
                 "--model_name", "mlpmodel1",
-                "--learningratename", "StepLR",
-                "--optimizer", "Adam"
+                "--learningratename", "MultiStepLR",
+                "--optimizer", "AdamW",
+                "--learning-rate", "0.01",
+                "--epochs", "20"
             ]
         }
     ]

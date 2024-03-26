@@ -104,7 +104,7 @@ parser.add_argument('--momentum', default=0.9, type=float, metavar='M',
 parser.add_argument('--wd', '--weight-decay', default=1e-4, type=float,
                     metavar='W', help='weight decay (default: 1e-4)',
                     dest='weight_decay')
-parser.add_argument('--optimizer', default='SGD', choices=['SGD', 'Adam', 'adamresnetcustomrate'],
+parser.add_argument('--optimizer', default='SGD', choices=['SGD', 'Adam', 'adamresnetcustomrate', 'AdamW'],
                     help='select the optimizer')
 parser.add_argument('-j', '--workers', default=2, type=int, metavar='N',
                     help='number of data loading workers (default: 2)')

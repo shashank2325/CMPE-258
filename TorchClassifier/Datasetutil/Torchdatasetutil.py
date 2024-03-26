@@ -47,11 +47,11 @@ def datanormalization():
 def datatransforms(mean, std, imagesize=28, training=True):
     if training==True:
         datatransform = transforms.Compose([
-                    # transforms.RandomRotation(5, fill=(0,)),
-                    # transforms.RandomCrop(imagesize, padding = 2),
-                    # transforms.RandomAffine(degrees=10, translate=(0.1, 0.1), scale=(0.9, 1.1)),
-                    # transforms.ColorJitter(brightness=0.2, contrast=0.2),
-                    # transforms.RandomHorizontalFlip(),
+                    transforms.RandomRotation(5, fill=(0,)),
+                    #transforms.RandomCrop(imagesize, padding = 2),
+                    transforms.RandomAffine(degrees=10, translate=(0.1, 0.1), scale=(0.9, 1.1)),
+                    transforms.ColorJitter(brightness=0.2, contrast=0.2),
+                    transforms.RandomHorizontalFlip(),
                     transforms.ToTensor(),
                     transforms.Normalize(mean = [mean], std = [std])
                                 ])
