@@ -34,5 +34,5 @@ To run `myTorchTrainer.py` with different parameters, you can modify the `args` 
 - `--optimizer`: The optimizer to use for training (e.g., `Adam`).
 
 ## Contributors
-This project is developed and maintained by [Your Name]. For any queries or contributions, feel free to open an issue or a pull request.
+This assignment is developed and maintained by Shashank Muthuraj.
 
